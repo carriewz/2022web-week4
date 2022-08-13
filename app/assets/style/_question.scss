@@ -1,0 +1,23 @@
+.question{
+    margin: 96px auto 80px;
+    @include phone{
+     margin: 40px auto 64px;
+ }
+ }
+ .question-list{
+     max-width: 856px;
+     margin-top: 24px;
+     li{
+         margin-bottom: 32px;
+     }
+     h4{
+         font-weight: bold;
+         font-size: 20px;
+         margin-bottom: 8px;
+     }
+     @include phone{
+         li{
+             margin-bottom: 24px;
+         }
+     }
+ }

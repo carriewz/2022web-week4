@@ -1,0 +1,67 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    //outline: 1px solid black;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Noto Sans TC','Roboto', sans-serif;
+   
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+   
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include pad(){
+        padding: 0 36px;
+    }
+    @include phone(){
+         padding: 0 15px;
+    }
+   
+}
+.header-container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include pad(){
+        padding: 0 36px;
+    }  
+    @include phone(){
+         padding: 0;
+    }
+}
+
+.bg-dark{
+    background-color: $primary;
+    color: #ffffff; 
+    a{
+        color:#ffffff;
+        &:hover{
+            color: #000000;
+        }
+    }  
+}
+
+.title{
+    font-size: 48px;
+    font-weight: bold;
+    border-left: 8px solid $title-border;
+    padding-left: 16px;
+    margin-bottom: 32px;
+    @include phone(){
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+}
+.sub-title{
+    font-size: 24px;
+    font-weight: bold;
+}
